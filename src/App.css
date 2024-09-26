@@ -1,0 +1,40 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.dashboard {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.data-table {
+  background-color: #f2f2f266;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+th {
+  color: #343a40 !important;
+}
+
+ul.pagination {
+  display: inline-flex;
+}
+
+a.page-link,  .disabled>.page-link, .page-link.disabled {
+  color: #343a40;
+  border: none;
+  background: none !important;
+}
