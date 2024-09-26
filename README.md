@@ -1,50 +1,38 @@
-# React + TypeScript + Vite
+# React Metrics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based metrics dashboard that visualizes data through an interactive table and chart. 
+Users can sort and filter the data in the table and interact with the chart through clickable options.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive Table**: A clickable table that allows users to sort and filter metrics.
+- **Dynamic Chart**: A chart that updates based on user interactions, providing insights into the metrics.
+- **Responsive Design**: Optimized for various screen sizes for an improved user experience.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React
+- TypeScript
+- TanStack Table
+- Chart.js
+- react-chartjs-2
+- React Bootstrap
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+To get started with this project, follow the steps below:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. **Clone the repository**:
+   git clone https://github.com/yourusername/react-metrics-dashboard.git
+   cd react-metrics-dashboard
+   
+2. **Install dependencies**:
+   npm install
+   
+3. **Run the project**:
+To start the development server, run:
+  npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Usage
+Table: Click on the table headers to sort the data, and use the filter options to refine your view.
+Chart: Interact with the chart to explore different metrics dynamically.
